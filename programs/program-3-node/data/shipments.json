@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ST1001",
+    "receiver": "Aarav Sharma",
+    "destination": "Mumbai",
+    "status": "In Transit"
+  },
+  {
+    "id": "ST1002",
+    "receiver": "Priya Patel",
+    "destination": "Pune",
+    "status": "Delivered"
+  },
+  {
+    "id": "ST1003",
+    "receiver": "Rahul Mehta",
+    "destination": "Delhi",
+    "status": "Pending"
+  },
+  {
+    "id": "ST1004",
+    "receiver": "Ananya Desai",
+    "destination": "Hyderabad",
+    "status": "Pending"
+  }
+]

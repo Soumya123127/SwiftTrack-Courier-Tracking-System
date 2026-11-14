@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #2563eb;
+    --dark: #14213d;
+    --background: #f4f7fc;
+    --text: #26344d;
+    --muted: #718096;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+.header {
+    background: var(--white);
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.04);
+}
+
+.brand {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--dark);
+}
+
+.brand span {
+    color: var(--primary);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+.hero {
+    background: linear-gradient(120deg, #14213d, #2563eb);
+    color: white;
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: #60a5fa;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.12;
+    margin-bottom: 20px;
+}
+
+.hero > p:not(.eyebrow) {
+    color: #dbeafe;
+    margin-bottom: 30px;
+}
+
+.tracking-form {
+    max-width: 620px;
+    margin: auto;
+    display: flex;
+    background: white;
+    padding: 7px;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.tracking-form input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 14px;
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 15px 22px;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.result-section,
+.shipments-section {
+    padding: 55px 8%;
+}
+
+h2 {
+    font-size: 26px;
+    color: var(--dark);
+    margin-bottom: 22px;
+}
+
+.result-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5eaf3;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+    min-height: 90px;
+}
+
+.result-card h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.result-card p {
+    margin: 8px 0;
+    color: var(--muted);
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.section-heading h2 {
+    margin-bottom: 0;
+}
+
+select {
+    padding: 12px 15px;
+    border: 1px solid #dce3ef;
+    border-radius: 8px;
+    background: white;
+    color: var(--text);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5eaf3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 18px 20px;
+    border-bottom: 1px solid #edf0f5;
+    font-size: 13px;
+}
+
+th {
+    background: #f8faff;
+    color: var(--muted);
+    font-weight: 700;
+}
+
+td {
+    color: var(--text);
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.status.Delivered {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.status.Pending {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.status.In-Transit {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+footer {
+    text-align: center;
+    background: var(--dark);
+    color: #cbd5e1;
+    padding: 25px;
+    font-size: 12px;
+}
+
+@media (max-width: 650px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 65px 6%;
+    }
+
+    .tracking-form {
+        flex-direction: column;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .result-section,
+    .shipments-section {
+        padding: 40px 6%;
+    }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ST3001",
+    "receiver": "Ananya Desai",
+    "destination": "Hyderabad",
+    "status": "Pending"
+  },
+  {
+    "id": "ST3002",
+    "receiver": "Soumya Naik",
+    "destination": "Mumbai",
+    "status": "In Transit"
+  },
+  {
+    "id": "ST4002",
+    "receiver": "Test User",
+    "destination": "Pune",
+    "status": "Pending"
+  },
+  {
+    "id": "ST5001",
+    "receiver": "test",
+    "destination": "pune",
+    "status": "Pending"
+  },
+  {
+    "id": "ST3003",
+    "receiver": "testsss",
+    "destination": "mumbai",
+    "status": "Pending"
+  },
+  {
+    "id": "ST4003",
+    "receiver": "test",
+    "destination": "mumbai",
+    "status": "Pending"
+  },
+  {
+    "id": "ST6001",
+    "receiver": "testing",
+    "destination": "mumbai",
+    "status": "Pending"
+  }
+]
